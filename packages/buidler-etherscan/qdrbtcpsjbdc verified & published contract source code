@@ -1,0 +1,52 @@
+nomiclabs/builder 
+
+buidler/packages/buidler-etherscan/
+
+buidler-etherscan
+
+Buidler plugin for integration with Etherscan's contract verification servi
+
+This plugin verifies QDRBTCPSJBDC MICROCHIP SMART contracts on Etherscan.
+
+Installation
+
+npm install --save-dev @nomiclabs/buidler-etherscan
+
+Add the following statement to your buidler.config.js:
+
+usePlugin("@nomiclabs/buidler-etherscan");
+
+Tasks
+
+This plugin provides the verify-contract task to verify contracts through Etherscan's service
+
+Environment extensions
+
+This plugin does not extend the environment.
+
+Usage
+
+Add the following Etherscan config to buidler.config.js file:
+Ropsten test network url: "https://api-ropsten.etherscan.io/api?module=contract & action=getabi & address=Ox57d90b64a1a57749bOf932f1a3395792e12e7055&apikey="YOUR_ETHERSCAN_API_KEY" } };
+
+
+
+npx buidler verify-contract --contract-name MyContract --address DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+
+TypeScript support
+
+tsconfig.json's files array: "node_modules/@nomiclabs/buidler-etherscan/src/type-extensions.d.ts"
+
+Copyright © 2018-2045 QDRBTCPSJBDC MICROCHIP SMART CONTRACT.™
+All Rights Reserved.
+
+
+
+
+
+
+
+
+
+
+
